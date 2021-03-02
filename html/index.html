@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <strong class="site-title">oFig <span class="site-title__subtitle">Figurines et statuettes</span></strong>
+        <h1 class="page-title">Votre panier <em class="page-title__theme">2 produits</em></h1>
+    </header>
+    <main class="content">
+        <h2>Votre panier</h2>
+        <table class="table">
+            <thead>
+                <tr class="table__row">
+                    <th class="table__row--none">Figurine</th>
+                    <th class="table__row--none">Prix unitaire</th>
+                    <th class="table__row--none">Quantité</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr>
+                    <td>Cloud Strife</td>
+                    <td>59 €</td>
+                    <td>
+                        <input class="table__place" type="number" id="quantity" name="quantity" required minlength="4" maxlength="8" size="10" placeholder="1">
+                        <a class="table__link" href="">supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tifa Lockhart</td>
+                    <td>69 €</td>
+                    <td>
+                        <input class="table__place" type="number" id="quantity" name="quantity" required minlength="4" maxlength="8" size="10" placeholder="1">
+                        <a class="table__link" href="">supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Barret Wallace</td>
+                    <td>69 €</td>
+                    <td>
+                        <input class="table__place" type="number" id="quantity" name="quantity" required minlength="4" maxlength="8" size="10" placeholder="1">
+                        <a class="table__link" href="">supprimer</a>
+                    </td>
+                </tr>
+                <tr class="table__flex">
+                    <td class="table__total" colspan="2"><strong>Total de la commande:</strong></td>
+                    <td colspan="1" class="table__price">197 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="h2--border">Préférences de livraison</h2>
+        <section class="flex">
+            <div class="flex__questions">
+                <div>
+                    <p class="flex__p1">Où souhaitez-vous être livré ?</p>
+                    <input type="radio" id="adress" name="adress" value="adress"
+                           checked>
+                    <label for="adress">Mon adresse courante</label>
+                </div>
+                  
+                <div>
+                    <input type="radio" id="adress" name="adress" value="adress">
+                    <label for="adress">Autre adresse</label>
+                </div>
+                    <div>
+                        <p class="flex__p1">Options</p>
+                        <div>
+                            <input type="checkbox" id="follow" name="follow"
+                                    checked>
+                            <label for="follow">Suivi de livraison par sms (inclus)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="follow" name="follow"
+                                    checked>
+                            <label for="follow">Satisfait ou remboursé (+ 2 euros)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="follow" name="follow"
+                                    checked>
+                            <label for="follow">Garanti 2 ans (+ 10 euros)</label>
+                        </div>
+                    </div>
+            </div>
+            <div class="flex__questions">
+                <p class="flex__p1">
+                    Adresse
+                </p>
+                <div>
+                    <label for="street">Rue</label>
+                    <input class="flex--input" type="text" id="name" name="street" required minlength="4" maxlength="8" size="10">
+                </div>
+                <div>
+                    <label for="postal">Code postal</label>
+                    <input class="flex--input" type="number" id="postal" name="postal" required minlength="4" maxlength="8" size="10">
+                </div>
+                <div>
+                    <label for="town">Ville</label>
+                    <input class="flex--input" type="text" id="town" name="town" required minlength="4" maxlength="8" size="10">
+                </div>
+                    <p class="flex__p1">
+                        Informations complémentaires
+                    </p>
+                <div>
+                    <label for="detail">interphone, bâtiment, etc.</label>
+                    <textarea class="flex--input" id="detail" name="detail" rows="3" cols="33">
+                    </textarea>
+                </div>
+            </div>
+        </section>
+        <section class="part">
+            <table>
+                <tr class="table__flex--buy">
+                    <th class="table__total table__total--add" colspan="2"><strong>Montant total à régler:</strong></th>
+                    <th colspan="1" class="table__price table__price--add">197 €</th>
+                </tr>
+            </table>
+        </section>
+        <section class="part part--modif">
+            <button class="part__button1" type="submit">Continuer vos achats</button>
+            <button class="part__button2" type="submit">Valider et payer</button>
+        </section>
+    </main>
+
+    <div class="fixed-sales">
+        <a href="#soldes">soldes</a>
+    </div>
+    <footer class="copyright">
+        <p>
+            oFig - toutes les images sont sous copyright SquareEnix
+        </p>
+    </footer>
+</body>
+</html>
+

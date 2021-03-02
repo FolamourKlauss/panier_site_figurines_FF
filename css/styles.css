@@ -1,0 +1,225 @@
+body {
+    font-family: Raleway, Tahoma, sans-serif;
+    text-align: center;
+    margin: 2rem;
+}
+tr:nth-child(odd)   { background-color:#eee; }
+tr:nth-child(even)    { background-color:##eee; }
+
+.table__row--none {
+    background-color: white;
+}
+
+.site-title {
+    background-color: #c80000;
+    color: white;
+    display: block;
+    padding: 1rem;
+    font-weight: bold; /* = 700 */
+    font-size: 2em;
+}
+
+.site-title__subtitle {
+    font-size: 0.5em; /* => 1rem */
+}
+
+.page-title {
+    background-color: #666;
+    text-align: center;
+    color: white;
+    padding: 0.625rem;
+}
+
+.page-title__theme {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/*MAIN*/
+.content {
+    margin: 2rem 30%;
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.h2--border{
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+
+.table {
+    display: inline;
+}
+
+.table__row{
+    
+    margin-bottom: 0.5rem;
+    border-bottom: 0.5px solid black;
+    border-left: ;
+    border-right: ;
+}
+
+.table__body {
+    border-bottom: 2px solid #eee;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+    border-radius: 2rem;
+
+}
+.table__price {
+    font-weight: 700;
+    color: red;
+    font-size: 1rem;
+}
+.table__place{
+    width: 2.5rem;
+    border: 1px solid black;
+    color: black;
+}
+.table__link {
+    color: red;
+    text-decoration: underline;
+    font-size: 0.7em;
+}
+
+
+.table__total {
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+
+.table__total--add {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.table__price--add{
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+th {
+    font-weight: 700;
+    font-size: 1rem;
+    width: 33%;
+    padding-bottom: 0.7rem;
+     
+}
+
+td {
+    padding: 0.5rem 1.2rem;
+}
+
+.table__flex--buy {
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.flex__p1 {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 1rem 0;
+    font-weight: 700;
+}
+
+.flex__questions {
+    text-align: left;
+    font-size: 0.7em;
+    padding: 0 0.5rem;
+    line-height: 1.5rem;
+    width: 50%;
+}
+
+.flex--input {
+    display: block;
+    background-color: #eee;
+    width: 100%;
+}
+
+.part {
+    padding: 1rem 0.5rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.part--modif {
+    display: flex;
+    border-top: none;
+    justify-content: space-between;
+}
+
+.part__button1 {
+    background-color: #eee;
+    padding: 0.4rem 1rem;
+    color: black;
+    font-weight: 700;
+    border: none;
+}
+
+.part__button2 {
+    padding: 0.4rem 1rem;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.copyright {
+    background-color: #666;
+    padding: 1rem;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* Positions */
+/*.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}*/
+
+
+
+.fixed-sales {
+    position: fixed;
+    left: 0;
+    top: calc(50% - 102px / 2);
+    background-color: #c80000;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 15px 8px 15px 5px;
+    text-align: center;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
